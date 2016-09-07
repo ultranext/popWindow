@@ -7,6 +7,10 @@ require.config({
 require(['jquery','window'],function($,w){
 
 	$('#btn').on('click',function(){
-		new w.Window().alert("welcome")
+		new w.Window().alert({content:'welcome',
+			width:300,
+			height:200,
+			y:100
+	})
 	})
 })
