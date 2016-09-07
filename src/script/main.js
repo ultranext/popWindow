@@ -10,7 +10,14 @@ require(['jquery','window'],function($,w){
 		new w.Window().alert({content:'welcome',
 			width:300,
 			height:200,
-			y:100
+			y:100,
+			hasCloseBtn:true,
+			handler_cofm_btn: function(){
+				alert("you alert comfirm button");
+			},
+			handler_close_Btn: function(){
+				alert('you alert comfirm button');
+			}
 	})
 	})
 })
