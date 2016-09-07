@@ -1,11 +1,12 @@
 require.config({
-
-	paths:
+	paths:{
+		jquery:"../lib/jquery-1.12.2.min",
+	}
 })
 
 require(['jquery','window'],function($,w){
 
-	$(#a).on('click',function(){
-		w.Window.alert("welcome")
+	$('#btn').on('click',function(){
+		new w.Window().alert("welcome")
 	})
 })
